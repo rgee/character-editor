@@ -38,6 +38,5 @@ build/Release
 
 node_modules
 
-resources
 tmp
 bower_components
