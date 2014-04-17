@@ -1,0 +1,33 @@
+{
+  "name": "character-editor",
+  "version": "0.0.0",
+  "description": "",
+  "keywords": [],
+  
+    "homepage": "https://github.com/rgee/character-editor",
+    "bugs": "https://github.com/rgee/character-editor/issues",
+    "author": {
+      "name": "Ryan Gee",
+      "email": "ryan.cv.gee@gmail.com",
+      "url": "https://github.com/rgee"
+    },
+    "repository": {
+      "type": "git",
+      "url": "git://github.com/rgee/character-editor.git"
+    },
+  
+  "dependencies": {},
+  "devDependencies": {
+    "matchdep": "~0.1.2",
+    "grunt": "~0.4.1",
+    "grunt-contrib-copy": "~0.4.1",
+    "grunt-contrib-concat": "~0.1.3",
+    "grunt-contrib-jshint": "~0.4.3",
+    "grunt-contrib-clean": "~0.4.1",
+    "grunt-contrib-rename": "0.0.3",
+    "grunt-contrib-compress": "~0.5.3"
+  },
+  "engines": {
+    "node": ">=0.8.0"
+  }
+}
