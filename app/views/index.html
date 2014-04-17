@@ -10,7 +10,28 @@
     <script src="../js/controllers/main.js"></script>
 </head>
 <body ng-app="CharacterEditor" ng-controller="MainController">
-	<h1>character-editor</h1>
-	<p>A character editor for the game</p>
+  <div class="container">
+    <div class="row">
+      <div class="header span6 pull-left">
+      	<h1>SomeTRPG Characters</h1>
+      	<p>A character editor for the game. Choose a file to begin.</p>
+      </div>
+      <div class="span6 pull-right">
+        <button type="button" class="btn btn-primary">Add Character</button>
+      </div>
+    </div>
+    <div class="row">
+      <accordion close-others="true">
+        <accordion-group ng-repeat="character in characters">
+          <accordion-heading>
+            {{character.name}} <i class="pull-right glyphicon glyphicon-remove"></i>
+          </accordion-heading>
+          
+          {{character.name}}
+        </accordion-group>
+      </accordion>
+    </div>
+  </div>
+
 </body>
 </html>
