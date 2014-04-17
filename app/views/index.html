@@ -24,27 +24,28 @@
       <accordion class="span12" close-others="true">
         <accordion-group ng-repeat="character in characters">
           <accordion-heading>
-            {{character.name}} <i class="pull-right glyphicon glyphicon-remove"></i>
+            {{character.name}}
           </accordion-heading>
 
           <form role="form">
             <div class="row">
-            <div class="form-group col-xs-4">
-              <label for="name">Name</label>
-              <input type="text" class="form-control" id="name" ng-model="character.name" placeholder="Character Name" required>
+              <div class="form-group col-xs-4">
+                <label for="name">Name</label>
+                <input type="text" class="form-control" id="name" ng-model="character.name" placeholder="Character Name" required>
+              </div>
             </div>
-          </div>
-          <div class="row">
-            <div class="form-group col-xs-2">
-              <label for="hp">HP</label>
-              <input type="number" class="form-control" id="hp" ng-model="character.growths.hp" min="0" max="100" size="3" required>
+            <div class="row">
+              <div class="form-group col-xs-2">
+                <label for="hp">HP</label>
+                <input type="number" class="form-control" id="hp" ng-model="character.growths.hp" min="0" max="100" size="3" required>
+              </div>
+              <div class="form-group col-xs-2">
+                <label for="str">Strength</label>
+                <input type="number" class="form-control" id="str" ng-model="character.growths.str" min="0" max="100" size="3" required>
+              </div>
             </div>
-            <div class="form-group col-xs-2">
-              <label for="str">Strength</label>
-              <input type="number" class="form-control" id="str" ng-model="character.growths.str" min="0" max="100" size="3" required>
-            </div>
-          </div>
           </form>
+          <div class="pull-right btn btn-danger">Remove</div
         </accordion-group>
       </accordion>
     </div>
